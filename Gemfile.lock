@@ -1,7 +1,13 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    avro (1.12.0)
+      multi_json (~> 1.0)
+    avro_turf (1.18.0)
+      avro (>= 1.11.3, < 1.13)
+      excon (~> 0.104)
     base64 (0.3.0)
+    excon (0.112.0)
     ffi (1.17.2-aarch64-linux-gnu)
     karafka (2.5.0)
       base64 (~> 0.2)
@@ -19,6 +25,7 @@ GEM
       rake (> 12)
     logger (1.7.0)
     mini_portile2 (2.8.9)
+    multi_json (1.17.0)
     rake (13.3.0)
     waterdrop (2.8.5)
       karafka-core (>= 2.4.9, < 3.0.0)
@@ -30,6 +37,8 @@ PLATFORMS
   aarch64-linux
 
 DEPENDENCIES
+  avro (~> 1.12)
+  avro_turf (~> 1.17)
   karafka (~> 2.2)
 
 BUNDLED WITH
