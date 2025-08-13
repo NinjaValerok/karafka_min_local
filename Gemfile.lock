@@ -1,0 +1,36 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    base64 (0.3.0)
+    ffi (1.17.2-aarch64-linux-gnu)
+    karafka (2.5.0)
+      base64 (~> 0.2)
+      karafka-core (>= 2.5.2, < 2.6.0)
+      karafka-rdkafka (>= 0.19.5)
+      waterdrop (>= 2.8.3, < 3.0.0)
+      zeitwerk (~> 2.3)
+    karafka-core (2.5.5)
+      karafka-rdkafka (>= 0.19.2, < 0.21.0)
+      logger (>= 1.6.0)
+    karafka-rdkafka (0.20.1)
+      ffi (~> 1.15)
+      logger
+      mini_portile2 (~> 2.6)
+      rake (> 12)
+    logger (1.7.0)
+    mini_portile2 (2.8.9)
+    rake (13.3.0)
+    waterdrop (2.8.5)
+      karafka-core (>= 2.4.9, < 3.0.0)
+      karafka-rdkafka (>= 0.19.2)
+      zeitwerk (~> 2.3)
+    zeitwerk (2.7.3)
+
+PLATFORMS
+  aarch64-linux
+
+DEPENDENCIES
+  karafka (~> 2.2)
+
+BUNDLED WITH
+   2.7.1
