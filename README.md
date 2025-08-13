@@ -1,0 +1,1 @@
+# karafka_min_local
