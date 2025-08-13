@@ -101,7 +101,3 @@ end
 # Visit the setup documentation to get started and enhance your experience.
 #
 # https://karafka.io/docs/Web-UI-Getting-Started
-require 'avro_turf/messaging'
-require 'avro_turf'
-avro = AvroTurf::Messaging.new(registry_url: "http://schema-registry:8081/")
-data = avro.encode({ "title" => "hello, world" }, schema_name: "greeting")
