@@ -15,4 +15,6 @@ bundle exec irb -r ./karafka.rb
 
 отправка сообщения
 Karafka.producer.produce_sync(topic: 'example', payload: { 'ping' => 'pong' }.to_json)
+
+примеры работы с avro представленны в скриптах
 ```
